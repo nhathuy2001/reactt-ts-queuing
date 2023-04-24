@@ -1,0 +1,247 @@
+.wrapper {
+    padding: 0 24px;
+}
+
+.heading {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    color: var(--primary);
+    margin: 16px 0;
+}
+.filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    margin-right: 104px;
+}
+
+.dropdown-wrap {
+    display: flex;
+    gap: 24px;
+
+    .dropdown {
+        width: 300px;
+    }
+}
+
+.search-wrap {
+    width: 300px;
+}
+
+.title {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin-bottom: 4px;
+}
+
+.wrap-table {
+    position: relative;
+    padding-right: 104px;
+}
+
+.wrap-btn {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    top: 0;
+    right: -24px;
+    width: 80px;
+    background-color: var(--orange-50);
+    padding: 14px 4px;
+    box-shadow: 0px 0px 6px #e7e9f2;
+    border-radius: 8px 0px 0px 8px;
+    cursor: pointer;
+
+    span {
+        color: var(--primary);
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+        text-align: center;
+    }
+}
+
+.d-flex {
+    display: flex;
+}
+
+.gap-24 {
+    gap: 24px;
+}
+// Add service CSS:
+.add-service-wrap {
+    .title {
+        margin-bottom: 8px;
+    }
+}
+.wrap-content {
+    padding: 16px 24px;
+    background-color: var(--white-color);
+    box-shadow: 2px 2px 8px rgba(232, 239, 244, 0.8);
+    border-radius: 16px;
+}
+
+.sub-heading {
+    color: var(--primary);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 3rem;
+    margin-bottom: 12px;
+    margin-top: 16px;
+}
+
+.wrap-text-box {
+    display: flex;
+    gap: 24px;
+
+    .text-box-item {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .text-box-required {
+        display: flex;
+        gap: 12px;
+        flex-direction: column;
+    }
+
+    .desc-box {
+        flex: 1;
+        resize: none;
+    }
+}
+
+.required {
+    height: 18px;
+    color: var(--red-color);
+}
+
+.setting-role {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .number-box {
+        width: 61px;
+        height: 44px;
+        padding: 10px;
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+            appearance: none;
+            -webkit-appearance: none;
+        }
+    }
+}
+
+.auto-increase {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.wrap-check-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    .check-box {
+        min-width: 135px;
+    }
+}
+
+.note {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 18px;
+
+    .text {
+        font-weight: 400;
+        font-size: 1.4rem;
+    }
+}
+
+.wrap-button {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 24px;
+    margin-bottom: 32px;
+
+    .btn-add,
+    .btn-cancel {
+        width: 147px;
+        height: 48px;
+        padding: 12px;
+        text-align: center;
+        line-height: 22px;
+    }
+}
+
+// CSS detail service
+.detail-service {
+    .wrap-content {
+        width: 370px;
+    }
+
+    .wrap-info .title {
+        min-width: 95px;
+    }
+
+    .wrap-table {
+        width: 718px;
+        padding: 16px 24px 0;
+        background-color: var(--white-color);
+        box-shadow: 2px 2px 8px rgba(232, 239, 244, 0.8);
+        border-radius: 12px;
+    }
+
+    .filter {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        margin-right: 0;
+    }
+
+    .dropdown-status {
+        width: 160px;
+    }
+    .search {
+        flex: 1;
+    }
+
+    .update-btn,
+    .back-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+    }
+
+    .update-btn {
+        position: relative;
+        padding-bottom: 12px;
+        &::after {
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left: 50%;
+            width: 72px;
+            height: 1px;
+            transform: translate(-50%, 50%);
+            background-color: var(--orange-100);
+        }
+    }
+
+    .back-btn {
+        padding-top: 12px;
+    }
+}

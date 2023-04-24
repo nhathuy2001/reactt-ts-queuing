@@ -1,0 +1,141 @@
+.wrapper {
+    padding: 16px 24px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    margin-right: 104px;
+}
+.heading {
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+}
+.search {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 240px;
+}
+.title {
+    color: var(--gray-500);
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+.body {
+    position: relative;
+    padding-right: 104px;
+}
+
+.addRole-btn {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80px;
+    padding: 12px 4px;
+    gap: 4px;
+    top: 0;
+    right: -24px;
+    background: var(--orange-50);
+    box-shadow: 0px 0px 6px #e7e9f2;
+    border-radius: 8px 0px 0px 8px;
+
+    span {
+        color: var(--primary);
+        font-weight: 600;
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+        text-align: center;
+    }
+}
+.required {
+    display: inline-block;
+    color: var(--red-color);
+    height: 18px;
+}
+// Add role
+.update-role,
+.add-role {
+    .heading {
+        margin-bottom: 32px;
+    }
+    .body {
+        padding: 16px 24px 24px;
+        background: var(--white-color);
+        box-shadow: 2px 2px 8px rgba(232, 239, 244, 0.8);
+        border-radius: 16px;
+    }
+
+    .sub-heading {
+        color: var(--primary);
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .wrap-content {
+        display: flex;
+        gap: 24px;
+        .content {
+            width: 50%;
+        }
+
+        .title {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            margin-top: 12px;
+            margin-bottom: 8px;
+        }
+
+        .desc {
+            resize: none;
+            height: 160px;
+            margin-bottom: 2px;
+        }
+    }
+}
+
+.group-func {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    height: 420px;
+    padding: 16px 24px;
+    background: var(--orange-50);
+    border-radius: 8px;
+    overflow-y: overlay;
+}
+
+.func {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    label {
+        margin-left: 0 !important;
+    }
+
+    > div {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin: 24px 0 32px;
+}
+
+.update-btn,
+.cancel-btn,
+.add-btn {
+    width: 147px;
+    height: 48px;
+}

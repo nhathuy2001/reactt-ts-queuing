@@ -1,0 +1,29 @@
+.wrapper {
+    width: 200px;
+    height: calc(100% - 62px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 54px;
+    margin: 32px 0 30px;
+    background-color: var(--white-color);
+}
+
+.menubar {
+    flex: 1;
+}
+body .wrapper .btn-logout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 12px;
+    height: 48px;
+    width: 176px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--primary);
+    background: #fff2e7;
+    border-radius: 8px;
+    border: none;
+}

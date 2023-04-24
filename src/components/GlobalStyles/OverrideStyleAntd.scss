@@ -1,0 +1,216 @@
+a:hover,
+a {
+    color: inherit;
+}
+
+// Override input CSS antd
+
+body
+    .ant-input-affix-wrapper-status-error:not(
+        .ant-input-affix-wrapper-disabled
+    ):not(.ant-input-affix-wrapper-borderless).ant-input-affix-wrapper,
+body
+    .ant-input-affix-wrapper-status-error:not(
+        .ant-input-affix-wrapper-disabled
+    ):not(.ant-input-affix-wrapper-borderless).ant-input-affix-wrapper:hover {
+    border-color: var(--red-color);
+}
+
+body
+    .ant-input-affix-wrapper-status-error:not(
+        .ant-input-affix-wrapper-disabled
+    ):not(.ant-input-affix-wrapper-borderless).ant-input-affix-wrapper:focus,
+body
+    .ant-input-affix-wrapper-status-error:not(
+        .ant-input-affix-wrapper-disabled
+    ):not(.ant-input-affix-wrapper-borderless).ant-input-affix-wrapper-focused {
+    box-shadow: 0 0 0 2px rgb(231 63 63 / 20%);
+}
+
+.ant-input:hover,
+.ant-input:focus,
+body .ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover {
+    border-width: 1.5px;
+}
+
+body .ant-input-affix-wrapper:focus,
+body .ant-input-affix-wrapper-focused {
+    border-color: #40a9ff;
+    box-shadow: 0 0 0 2px rgb(24 144 255 / 20%);
+}
+
+.ant-input-affix-wrapper,
+.ant-input {
+    border: 1.5px solid #d4d4d7;
+    border-radius: 8px;
+    padding: 8.5px 12px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        appearance: none;
+        -webkit-appearance: none;
+    }
+}
+
+// Override color disable input antd
+.ant-input[disabled],
+.ant-input[disabled]:hover {
+    background-color: var(--gray-50);
+    border: none;
+}
+
+.ant-btn:hover,
+.ant-btn:focus {
+    color: inherit;
+    border-color: inherit;
+    background: inherit;
+}
+
+// Menubar CSS
+.ant-menu-item-icon,
+.ant-menu-submenu-expand-icon {
+    color: var(--placeholder-color);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.ant-menu-vertical .ant-menu-item:hover,
+.ant-menu-vertical .ant-menu-item-active,
+.ant-menu-vertical-left .ant-menu-submenu-selected,
+.ant-menu-vertical-right .ant-menu-submenu-selected,
+.ant-menu-submenu-active,
+.ant-menu-submenu-active .ant-menu-item-icon,
+.ant-menu-submenu-active .ant-menu-title-content,
+.ant-menu-submenu-active .ant-menu-title-content {
+    color: var(--primary);
+    background-color: var(--orange-50);
+}
+
+.ant-menu-title-content {
+    position: relative;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.ant-menu-item .ant-menu-item-icon + span {
+    margin-left: 8px;
+}
+.ant-menu-vertical .ant-menu-submenu .ant-menu-submenu-title,
+.ant-menu-vertical .ant-menu-item {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    padding-left: 16px !important;
+    margin: 0 !important;
+    color: var(--gray-300);
+}
+
+.ant-menu-submenu.ant-menu-submenu-selected,
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+    background-color: var(--primary);
+    color: var(--white-color);
+}
+
+.ant-menu-submenu-active .ant-menu-submenu-expand-icon,
+.ant-menu-submenu-title:hover .ant-menu-item-icon,
+.ant-menu-submenu-title:hover .ant-menu-title-content,
+.ant-menu-vertical .ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open,
+.ant-menu-vertical .ant-menu-submenu-title:hover .ant-menu-submenu-expand-icon,
+.ant-menu-vertical .ant-menu-submenu-selected .ant-menu-title-content,
+.ant-menu-vertical .ant-menu-submenu-selected .ant-menu-item-icon,
+.ant-menu-vertical .ant-menu-item:hover .ant-menu-item-icon {
+    color: var(--primary);
+    background-color: rgba(0, 0, 0, 0);
+}
+.ant-menu-submenu-selected .ant-menu-submenu-expand-icon,
+.ant-menu-submenu.ant-menu-submenu-selected .ant-menu-item-icon,
+.ant-menu-submenu.ant-menu-submenu-selected .ant-menu-title-content,
+.ant-menu-submenu.ant-menu-submenu-selected.ant-menu-submenu-active
+    .ant-menu-submenu-expand-icon {
+    color: var(--white-color);
+}
+
+.ant-menu:not(.ant-menu-horizontal)
+    .ant-menu-item-selected
+    .ant-menu-item-icon {
+    color: var(--white-color);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+// Overide CSS Table antd
+.ant-table,
+.ant-table-thead > tr > th,
+.ant-table-tbody > tr.ant-table-row:hover > td,
+.ant-table-tbody > tr > td.ant-table-cell-row-hover {
+    background: unset;
+}
+.ant-table.ant-table-bordered
+    > .ant-table-container
+    > .ant-table-content
+    > table
+    > tbody
+    > tr
+    > td,
+.ant-table.ant-table-bordered
+    > .ant-table-container
+    > .ant-table-content
+    > table
+    > thead
+    > tr
+    > th {
+    border-right: unset;
+}
+
+.ant-table.ant-table-bordered > .ant-table-container {
+    border-left: unset;
+}
+
+.ant-table table {
+    border-radius: unset;
+}
+// custom pagination:
+.ant-table-pagination.ant-pagination {
+    margin: 24px 0 20px;
+}
+.ant-pagination-prev .ant-pagination-item-link,
+.ant-pagination-next .ant-pagination-item-link {
+    border: none;
+}
+.ant-pagination-prev:hover .ant-pagination-item-link,
+.ant-pagination-next:hover .ant-pagination-item-link {
+    border: none;
+    color: var(--primary);
+}
+.ant-pagination-disabled .ant-pagination-item-link,
+.ant-pagination-disabled:hover .ant-pagination-item-link {
+    color: rgba(0, 0, 0, 0.25);
+}
+.ant-pagination-item,
+.ant-pagination-prev {
+    margin-right: 0;
+}
+.ant-pagination-item {
+    font-family: var(--font-family);
+    border: none;
+    &:hover {
+        background-color: var(--orange-50);
+        a {
+            color: var(--gray-400);
+        }
+    }
+}
+.ant-pagination-item.ant-pagination-item-active {
+    background-color: var(--primary);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 1.6rem;
+    a {
+        color: var(--white-color);
+    }
+}
+
+body .apexcharts-toolbar {
+    display: none;
+}

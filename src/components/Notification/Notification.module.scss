@@ -1,0 +1,77 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    height: 526px;
+    background: var(--white-color);
+    box-shadow: 2px 2px 15px rgba(70, 64, 67, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: var(--orange-400);
+    color: var(--white-color);
+    padding: 9px 24px;
+    span {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+.list-notify {
+    overflow-y: overlay;
+}
+
+// CSS Card notify
+.card-notify {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 16px 24px 12px;
+    transition: all linear 0.3s;
+    &:hover {
+        background-color: var(--orange-50);
+        cursor: pointer;
+    }
+}
+
+.user-name {
+    color: #bf5805;
+    font-weight: 700;
+}
+.time {
+    font-weight: 400;
+    color: #535261;
+}
+
+.line {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 320px;
+    height: 2px;
+    transform: translateX(-50%);
+    border-top: 1.5px solid #d4d4d7;
+    opacity: 0.6;
+}
+
+.card-notify:last-child .line {
+    display: none;
+}
+
+// custom scrollbar:
+.list-notify::-webkit-scrollbar {
+    width: 12px;
+}
+
+.list-notify::-webkit-scrollbar-thumb {
+    border-radius: 43px;
+    background-color: #ffc89b;
+    border: 4px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+}

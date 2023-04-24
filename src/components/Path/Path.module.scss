@@ -1,0 +1,51 @@
+.btn-path {
+    position: relative;
+    display: inline-block;
+    padding: 5px 8px;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--gray-300);
+}
+
+.btn-path:hover {
+    color: var(--gray-400);
+}
+
+.btn-path:last-child {
+    user-select: none;
+    pointer-events: none;
+    color: var(--primary);
+}
+
+.btn-path:last-child:hover {
+    cursor: default;
+    color: var(--primary);
+}
+
+.btn-path + .btn-path {
+    margin-left: 20px;
+}
+.btn-path::before,
+.btn-path::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    left: calc(100% + 7.5px);
+    width: 6px;
+    height: 1.5px;
+    background-color: currentColor;
+    border-radius: 2px;
+}
+.btn-path::before {
+    transform: rotate(45deg) translateY(-2.5px);
+}
+
+.btn-path::after {
+    transform: rotate(-45deg) translateY(2.5px);
+}
+
+.btn-path:last-child::before,
+.btn-path:last-child::after {
+    display: none;
+}

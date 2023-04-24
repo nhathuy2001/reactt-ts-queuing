@@ -1,0 +1,115 @@
+.wrapper {
+    padding: 16px 24px;
+}
+
+.heading {
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    margin-bottom: 20px;
+}
+
+.category {
+    display: flex;
+    gap: 13px;
+    justify-content: space-between;
+
+    &-item {
+        flex: 1;
+        height: 120px;
+        padding: 8px 12px;
+        background-color: var(--white-color);
+        border-radius: 10px;
+    }
+}
+
+.top,
+.bottom {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.bottom {
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+.wrap-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    background-color: rgba(102, 149, 251, 0.15);
+    border-radius: 50%;
+
+    &.used {
+        background-color: rgba(53, 199, 90, 0.15);
+    }
+
+    &.waiting {
+        background-color: rgba(255, 172, 106, 0.15);
+    }
+    &.skip {
+        background-color: rgba(248, 109, 109, 0.15);
+    }
+}
+
+.title {
+    color: var(--gray-400);
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+
+.quantity {
+    color: var(--gray-400);
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 4.5rem;
+}
+
+.percent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    color: var(--orange-400);
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    padding: 3px 6px;
+    background-color: rgba(255, 149, 1, 0.15);
+    border-radius: 10px;
+
+    &.reduce {
+        color: var(--red-color);
+        background-color: rgba(231, 63, 63, 0.15);
+    }
+}
+
+.body {
+    height: 484px;
+    background-color: var(--white-color);
+    border-radius: 12px;
+    padding: 24px;
+    margin-top: 16px;
+
+    .filter {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .order-by {
+        width: 184px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .dropdown {
+        width: 106px;
+    }
+}

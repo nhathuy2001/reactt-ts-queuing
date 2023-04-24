@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;900&display=swap");
+// @import "normalize.css";
+
+:root {
+    --font-family: "Nunito", sans-serif;
+
+    --primary: #ff7506;
+    --orange-50: #fff2e7;
+    --orange-100: #ffe3cd;
+    --orange-200: #ffc89b;
+    --orange-300: #ffac6a;
+    --orange-400: #ff9138;
+    --white-color: #ffffff;
+    --placeholder-color: #a9a9b0;
+    --gray-50: #eaeaec;
+    --gray-100: #d4d4d7;
+    --gray-300: #7e7d88;
+    --gray-400: #535261;
+    --gray-500: #282739;
+    --gray-blue: #535261;
+    --blue-color: #4277ff;
+    --green-color: #34cd26;
+    --red-color: #e73f3f;
+    --text-color: #161823;
+    --pink-color: #f178b6;
+    //Default layout:
+    --layout--width: 1440px;
+    --layout--height: 810px;
+    --topbar-height: 88px;
+}
+
+body * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+    color: var(--text-color);
+    max-width: var(--layout--width);
+    height: fit-content;
+    margin: 0 auto;
+}
+
+// custom scrollbar:
+html *::-webkit-scrollbar {
+    border-radius: 0;
+    width: 8px;
+    height: 8px;
+}
+
+html *::-webkit-scrollbar-thumb {
+    border-radius: 43px;
+    background-color: #ffc89b;
+}
+
+html *::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+// CSS
+
+.d-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.d-flex-column {
+    flex-direction: column;
+}
+
+.relative {
+    position: relative;
+}
+
+// button style
+.btn {
+    font-weight: 700;
+    line-height: 19px;
+    padding: 10px 24px;
+    box-shadow: 0px 0px 6px #e7e9f2;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all linear 0.3s;
+    outline: none;
+    border: none;
+
+    &.btn-primary {
+        background-color: var(--orange-300);
+        color: var(--white-color);
+        &:focus {
+            background-color: var(--orange-300);
+            color: var(--white-color);
+        }
+        &:hover {
+            background-color: var(--orange-400);
+            color: var(--white-color);
+            border-color: transparent;
+        }
+        &:active {
+            background-color: var(--primary);
+        }
+        &.disabled {
+            background-color: var(--placeholder-color);
+            pointer-events: none;
+            cursor: default;
+        }
+    }
+
+    &.btn-outline {
+        color: var(--orange-300);
+        background-color: var(--white-color);
+        border: 1.5px solid var(--orange-300);
+
+        &:hover {
+            color: var(--orange-400);
+            background-color: var(--orange-50);
+            border-color: var(--orange-400);
+        }
+        &:focus {
+            color: var(--orange-400);
+            border-color: var(--orange-400);
+        }
+        &:active {
+            color: var(--primary);
+            background-color: var(--orange-50);
+            border-color: var(--primary);
+        }
+        &.disabled {
+            color: var(--placeholder-color);
+            background-color: var(--white-color);
+            border-color: var(--placeholder-color);
+            pointer-events: none;
+            cursor: default;
+        }
+    }
+}
+
+.btn-link {
+    display: inline-block;
+    text-decoration: underline;
+    color: var(--blue-color);
+    outline: none;
+    border: none;
+    white-space: nowrap;
+    background-color: transparent;
+    &:hover {
+        cursor: pointer;
+        color: var(--blue-color);
+        text-decoration: underline;
+    }
+}
+
+[ant-click-animating-without-extra-node="true"]::after,
+.ant-click-animating-node {
+    display: none;
+}
+
+// Status
+.status {
+    position: relative;
+    padding-left: 12px;
+    &::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+    }
+    &.active.status::before {
+        background-color: var(--green-color);
+    }
+    &.stopped.status::before {
+        background-color: var(--red-color);
+    }
+    &.waiting.status::before {
+        background-color: var(--blue-color);
+    }
+    &.used.status::before {
+        background-color: var(--gray-300);
+    }
+}
+
+.required {
+    color: var(--red-color);
+}
